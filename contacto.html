@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacto - Clínica Dental</title>
+    <style>
+        body {
+             font-family: sans-serif;
+              margin: 0; 
+              background-color: #f0f8ff;
+             }
+        nav {
+             display: flex; 
+             justify-content: space-around; 
+             padding: 20px;
+              background: white; 
+            }
+        .form-container { 
+            max-width: 500px; 
+            margin: 50px auto; 
+            background: white; 
+            padding: 30px;
+             border-radius: 15px;
+              box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+             }
+        input, select {
+             width: 100%; 
+             padding: 10px; 
+             margin: 10px 0; 
+             border: 1px solid #ccc;
+              border-radius: 5px;
+             }
+        .btn-submit {
+             background: #add8e6;
+              border: none;
+               padding: 15px; 
+               width: 100%; 
+               border-radius: 25px;
+                cursor: pointer;
+                 font-weight: bold; 
+                }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Menú</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="nosotros.html">Sobre Mi</a>
+        <a href="equipo.html">Equipo</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <div class="form-container">
+        <h2>Agenda tu Cita</h2>
+        <p>Los datos se guardarán automáticamente en nuestro sistema.</p>
+        <form action="https://script.google.com/macros/s/AKfycbyt6_0nKbib64VpsqNbbw9kkJf8vhD6Wp3o1hQcghiOURjDooeA9AANx_4q5U7Nb3Ej/exec" method="POST">
+            <input type="text" name="nombre" placeholder="Nombre completo" required>
+            <input type="email" name="email" placeholder="Correo electrónico" required>
+            <input type="date" name="fecha" required>
+            <select name="servicio">
+                <option value="limpieza">Limpieza Dental</option>
+                <option value="ortodoncia">Ortodoncia</option>
+                <option value="urgencia">Urgencia</option>
+            </select>
+            <button type="submit" class="btn-submit">Enviar Cita</button>
+        </form>
+    </div>
+</body>
+</html>

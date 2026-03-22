@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Equipo - Clínica Dental</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif; 
+            margin: 0;
+            background-color: #f0f8ff;
+            text-align: center;
+        }
+        nav {
+            display: flex; 
+            justify-content: space-around;
+            padding: 20px; 
+            background: white; 
+            text-align: left; 
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        
+        .team-grid {
+            display: flex; 
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px; 
+            padding: 50px;
+        }
+        
+        .member { 
+            background: white; 
+            padding: 25px; 
+            border-radius: 15px; 
+            width: 230px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .member:hover {
+            transform: translateY(-10px);
+        }
+        .member img {
+            width: 120px;
+            height: 120px; 
+            border-radius: 50%; 
+            object-fit: cover; 
+            margin-bottom: 15px;
+            border: 3px solid #add8e6; 
+        }
+
+        h1 { color: #2c3e50; margin-top: 40px; }
+        h4 { margin: 10px 0 5px 0; color: #0077b6; }
+        p { color: #666; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Menú</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="nosotros.html">Sobre Mi</a>
+        <a href="equipo.html">Equipo</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <h1>Nuestro Equipo de Profesionales</h1>
+
+    <div class="team-grid">
+        <div class="member">
+            <img src="imagen 1.png" alt="Dra. Laura Ruiz">
+            <h4>Dra. Laura Ruiz</h4>
+            <p>Odontopediatra</p>
+        </div>
+
+        <div class="member">
+            <img src="imagen 2.png" alt="Dr.Elizabeth">
+            <h4>Dr. Carlos Sosa</h4>
+            <p>Maxilofacial</p>
+        </div>
+
+        <div class="member">
+            <img src="imagen 3.png" alt="carlos Méndez">
+            <h4>Sofía Méndez</h4>
+            <p>Higienista Dental</p>
+        </div>
+    </div>
+
+</body>
+</html>
